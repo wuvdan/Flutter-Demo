@@ -1,7 +1,12 @@
 import 'package:demo/Modules/Home/View/ui/NavigatorButton.dart';
 import 'package:demo/Modules/Home/View/ui/button.dart';
+import 'package:demo/Modules/Home/View/ui/checkbox.dart';
 import 'package:demo/Modules/Home/View/ui/icon.dart';
+import 'package:demo/Modules/Home/View/ui/image.dart';
+import 'package:demo/Modules/Home/View/ui/input.dart';
+import 'package:demo/Modules/Home/View/ui/switch.dart';
 import 'package:demo/Modules/Home/View/ui/text.dart';
+import 'package:demo/Modules/ThirdPart/webviewPage.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -31,6 +36,10 @@ class _HomePage extends State<HomePage> {
           NavigatorButton(text: "text", page: UITextPage()),
           NavigatorButton(text: "icon", page: UIIconPage()),
           NavigatorButton(text: "button", page: UIButtonPage()),
+          NavigatorButton(text: "image", page: UIImagePage()),
+          NavigatorButton(text: "switch", page: UISwitchPage()),
+          NavigatorButton(text: "checkbox", page: UICheckBoxPage()),
+          NavigatorButton(text: "textField", page: UIInputPage()),
         ],
       )
     );

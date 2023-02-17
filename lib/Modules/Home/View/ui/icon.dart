@@ -11,14 +11,20 @@ class _UIIconPage extends State<UIIconPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.deepOrange,
-        titleSpacing: 100,
-        title: Text("Icon"),
-      ),
-      body: const Center(
-          child: Text("Icon")
-      ),
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          titleSpacing: 100,
+          title: const Text("Icon"),
+        ),
+        body: ListView(
+          children: const [
+            Icon(Icons.add),
+            Icon(Icons.abc_outlined),
+            Icon(Icons.home),
+            Icon(Icons.home, color: Colors.red),
+            Icon(Icons.home, color: Colors.green, size: 100),
+          ],
+        )
     );
   }
 }
